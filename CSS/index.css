@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2? família = Blinker: wght @ 300 &family = Poppins: wght @ 300 & family = Fonte + Sans + Pro: wght @ 700 & display = swap');
+
+@import url('https://fonts.googleapis.com/css2? family = Open + Sans: wght @ 700 & display = swap');
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.box{
+    background-image: url(../IMG/imagem1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: OpenSans, sans-serif;
+}
+
+.entrada, .saida{
+    background-color: #ccccccb6;
+    border: 0.75vh solid yellow;
+    border-radius: 5vh;
+    color: black;
+    width: 40vw;
+    height: 65vh;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: -3.5vh;
+}
+
+.entrada h1, .saida h1{
+    font-size: 5vh;
+    border: 0.75vh solid yellow;
+    border-radius: 3vh;
+    background-color: yellow;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    color: gray;
+}
+
+form label, form p{
+    display: block;
+    font-size: 3vh;
+    padding: 2.5vh;
+}
+
+form select{
+    display: block;
+    margin-left: 1vw;
+}
+
+#texto{
+    margin-left: 1vw;
+    width: 37vw;
+    height: 10vh;
+    font-size: 3vh;
+}
+
+
+#divIncremento{
+    display: none;
+}
+
+#btnEnviar{
+    width: 10vw;
+    height: 7vh;
+    background-color: gray;
+    border-radius: 0.5vh;
+    border: none;
+    box-shadow: 0 0 0.5vh white;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.textoSaida{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textArea{
+    width: 37vw;
+    height: 30vh;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 3vh;
+}
+
+footer{
+    width: 100vw;
+    height: 5vh;
+    bottom: 0vh;
+    text-align: center;
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 2vh;
+    font-weight: bold;
+    background-color: #808080;
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media screen and (max-width: 480px ){
+
+
+    .box{
+
+        display: flex;
+        height: 170vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10vh
+        
+    }
+
+    .entrada, .saida{
+        
+        width: 70vw;
+        height: 65vh;
+    }
+
+    .titulo{
+
+        margin-top: -2.7vh;
+    }
+
+    .entrada h1, .saida h1{
+        font-size: 3vh;
+        width: 20vw;
+        height: 3vh;
+ 
+    }
+
+    form label, form p{
+
+        font-size: 3vh;
+        padding: 2vh;
+    }
+
+    form select{
+
+        margin-left: 5vw;
+    }
+
+    #texto{
+
+        margin-left: 5vw;
+        width: 58vw;
+        font-size: 2.5vh;
+    }
+
+    #btnEnviar{
+
+        width: 22vw;
+        height: 7vh;
+        text-align: center;
+
+    }
+
+    #textArea{
+
+        width: 57vw;
+        height: 30vh;
+        font-size: 2.8vh;
+    }
+
+    footer p{
+
+        font-size: 1.8vh;
+    
+    }
+
+}

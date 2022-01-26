@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor - Passinho do Romano</title>
+
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+
+
+</head>
+<body>
+
+    <div class="box">
+
+        <div class="entrada">
+
+            <div class="titulo">
+                <h1>Entrada</h1>
+            </div>
+
+            <form action="" id="formulario">
+                
+                <label for="texto">Digite sua mensagem aqui: </label>
+                <input type="text" id="texto">
+
+                <p>Escolha a referência:</p>
+
+                <select name="option" id="select">
+                    <option value="0">Selecione</option>
+                    <option value="1" id="cifra">Cifra de César</option>
+                    <option value="2" id="base">Base 64</option>
+                </select>
+
+                <p>Escolha a ação:</p>
+
+                <label for="radioCodificar"> <input type="radio" id="radioCodificar" name="btn" value="4"> Codificar</label>         
+                <label for="radioDecodificar"> <input type="radio" id="radioDecodificar" name="btn" value="5"> Decodificar</label>
+
+                <div id="divIncremento">
+                    <label for=""> Digite o incremento de 1 a 25: <input type="number" min="1" max="25"  name="" id="incremento"> </label>
+                </div>
+        
+            </form>
+
+        </div>
+
+        <div>
+            <button type="submit" value="6" id="btnEnviar"> Enviar </button>
+        </div>
+
+        <div class="saida">
+
+            <div class="titulo">
+                <h1>Saída</h1>
+            </div>
+            
+            <div class="textoSaida">
+                <textarea id="textArea" name="" id=""></textarea>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    <footer>
+        <p>&#169 Todos os direitos reservados por Paloma Barros - 2022</p>
+    </footer>
+
+<script src="./JS/index.js"></script>
+    
+</body>
+</html>
